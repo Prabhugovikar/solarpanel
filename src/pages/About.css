@@ -1,0 +1,321 @@
+/* About.css */
+
+.about {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  font-family: "Arial", sans-serif;
+  color: #333;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #242121;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.carousel-section {
+  margin: 40px 0;
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.mission,
+.vision {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.mission h2,
+.vision h2 {
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+.directors-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.directors-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0d47a1;
+}
+
+.directors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.director-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  animation: zoomIn 0.8s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.director-card:hover {
+  transform: scale(1.05);
+}
+
+.director-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.director-card h3 {
+  color: #181515;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.director-card p {
+  color: #777;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.about-footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.achievements {
+  margin: 40px 0;
+  text-align: center;
+}
+
+/* General styles */
+.about {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.about-header {
+  text-align: center;
+  padding: 2rem;
+  /* background: linear-gradient(135deg, #f8f7f7, #fffefe); */
+  color: white;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+}
+
+/* Carousel Section */
+.carousel-section {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.carousel-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Our Story Section */
+.our-story {
+  padding: 2rem;
+  /* background: white; */
+}
+
+.our-story h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.our-story p {
+  margin-bottom: 1rem;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 2rem;
+  /* background: #f2f2f2; */
+}
+
+.why-choose-us h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose-us li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.why-choose-us li::before {
+  content: "✓";
+  color: #27ae60;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Core Values Section */
+.core-values {
+  padding: 2rem;
+  /* background: white; */
+}
+
+.core-values h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.value {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 8px;
+  background:white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.value h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Directors Section */
+.directors-section {
+  padding: 2rem;
+  background: transparent;
+}
+
+/* .directors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+} */
+
+
+
+.director-card {
+  padding: 1rem;
+  border: 1px solid #f6f3f3;
+  border-radius: 8px;
+  background: white;
+}
+
+.director-card img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.director-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer Section */
+.about-footer {
+  text-align: center;
+  padding: 1rem;
+  background:transparent;
+  color: rgb(14, 13, 13);
+  margin-top: 2rem;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mission,
+  .vision {
+    max-width: 100%;
+  }
+
+  .director-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}

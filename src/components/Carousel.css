@@ -1,0 +1,110 @@
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    padding: 60px 20px;
+    /* background-color: #faf6f6; */
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .carousel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Container for horizontally scrolling cards */
+  .carousel-container {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+    
+  }
+  
+  /* Individual carousel cards */
+  .carousel-card {
+    flex: 0 0 auto;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color:white;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .carousel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .carousel-card-description {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .carousel-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Arrow Buttons Styling
+  .carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+  } */
+  
+  .arrow-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .arrow-button:hover {
+    opacity: 0.7;
+  }
+  
+  /* Specific styling for the left and right buttons */
+  .arrow-button.left {
+    position: absolute;
+    left: 0;
+  }
+  
+  .arrow-button.right {
+    position: absolute;
+    right: 0;
+  }
+  
+  /* Hide scrollbar but still allow scrolling */
+  .carousel-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
